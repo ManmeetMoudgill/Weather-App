@@ -18,7 +18,7 @@ function FetchWeatherInfo(event) {
         MessageDiv.innerHTML = createString;
     } else {
       
-      let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}&units=metric&lang=en-us`;
+      let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}&units=metric&lang=en-us`;
       fetch(url)
         .then((response) => {
           console.log("Inside the Resposne Promises");
